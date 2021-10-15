@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpleFormControls</title>
+</head>
+<body>
+    <h1>Регистрация</h1>
+ <form action="registration.py" method="GET">
+     <fieldset>
+         <legend>Лични данни</legend>
+         <div>Име: <input type="text" name="userName" placeholder="малко име, на латиница"></div>
+         <div>Име: <input type="text" name="userSurName" placeholder="фамилия, на латиница"></div>
+         <div>Пол: <label for="m">мъж:</label>
+         <input type="radio" id="m" name="gender" value="m">
+         <label for="f">жена:</label>
+         <input type="radio" id="f" name="gender" value="f"></div>
+     </fieldset>
+     <p>Коментар:</p>
+     <textarea name="comment" cols="30" rows="3">напишете ни нещо</textarea> <br>
+     <button type="submit">Изпрати</button>
+ </form>
+</body>
+</html>
